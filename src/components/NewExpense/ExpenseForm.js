@@ -21,7 +21,7 @@ export const ExpenseForm = ({onSaveExpenseData}) => {
         if(enteredTitle && enteredAmount && enteredDate !== ''){
           const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
           }
           onSaveExpenseData(expenseData)

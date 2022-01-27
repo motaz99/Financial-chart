@@ -11,7 +11,7 @@ const Expenses = ({expenses}) => {
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   }
-  const filteredExpenses = expenses.filter(expense => {
+  const filteredExpenses = expenses.filter((expense) => {
     return expense.date.getFullYear().toString() === filteredYear;
   })
   return(
